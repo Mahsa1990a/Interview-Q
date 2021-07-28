@@ -1,11 +1,11 @@
 const fs = require('fs');
 
-const printSize = function(err, data) {
+const print = function(err, data) {
   console.log("Chars: ", data.length);
 };
 
 const read = function(fp) {
-  fs.readFile(fp, 'utf8', printSize);
+  fs.readFile(fp, 'utf8', print);
   console.log("readFile called!");
 };
 
