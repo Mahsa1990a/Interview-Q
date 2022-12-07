@@ -3,7 +3,7 @@ function Banner() {
   const [name, setName] = useState("");
 
   useEffect(() => {
-    console.log("Count is updated");
+    console.log("Count is updated to:", count);
   });
 
   return (
